@@ -28,4 +28,16 @@ working directory in the sense that I can commit only a number of files in one
 of my commits, and for that the staging area allows me to add the relevant number
 of files and then make that commit.
 
+Q: How can you use the staging area to make sure you have one commit per 
+logical change?
+
+Every time that I made a change in a file that works I can use add git to 
+move the file to the staging area, but from there the only logical move is to
+commit it? Ahhhh... Every time I make a logical change, I add the file to the
+staging area.  Now, every time I want to add another change, before doing it I 
+commit that change, and add the next logical change to the staging area, is that
+the way?
+
+
+
 
