@@ -38,6 +38,19 @@ staging area.  Now, every time I want to add another change, before doing it I
 commit that change, and add the next logical change to the staging area, is that
 the way?
 
+Q: What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+
+In experimental mode, branches can be something very interesting to check whether
+some new feature can be added, add a new version in different language, or with
+a different logic, etc.
+
+Q: How do the diagrams help you visualize the branch structure?
+
+Diagrams help to understand the historic of comits and different branches, and
+therefore we can go in time to the different stages of the projects and explore
+different features, experiment with things, add or remove components, change
+behaviours, etc.  All very comprehensive!
 
 
 
