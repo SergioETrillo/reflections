@@ -52,5 +52,20 @@ therefore we can go in time to the different stages of the projects and explore
 different features, experiment with things, add or remove components, change
 behaviours, etc.  All very comprehensive!
 
+Q: What is the result of merging two branches together? Why do we represent it 
+in the diagram the way we do?
+
+It is the result of keeping the changes that we want to maintain in different
+branches, so that´s why there is a single point "merging" both branches. It seems
+to get the best features of both worlds.  Too good to be true!
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+Git automatic merging can have issues that are not simple for a computer to 
+resolve, so a manual merge can resolve ambiguities.  On the other side, all manual
+merges can be very time consuming and prone to errors
+
+
 
 
