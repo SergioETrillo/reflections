@@ -1,0 +1,31 @@
+in order to initialize a repository:
+git init (in the directory where we want to control version)
+
+with git init git do not commit anything, because if so what would be the msg
+added for the commitment? Also perhaps the user do not want to add all the
+files to the commit.  For this if we do:
+
+git log
+will give the following result:
+fatal: bad default revision 'HEAD'
+That indicates that there is nil comits 
+
+git status gives the status of the files that are in the repository, and the 
+status on whether the tracked or not.
+
+Q: What happens when you initialize a repository? Why do you need to do it?
+
+git creates a folder where it will store all the relevant metadata to track
+different versions of the repository.  If not done, where that information would
+be stored, and how would git know what we want to control version?
+
+Q: How is the staging area different from the working directory and the 
+repository? What value do you think it offers?
+
+The staging area is a buffer area that allows granularity on the files of my
+working directory that I want to version control.  It is different from the
+working directory in the sense that I can commit only a number of files in one
+of my commits, and for that the staging area allows me to add the relevant number
+of files and then make that commit.
+
+
