@@ -1,0 +1,70 @@
+Q:How did viewing a diff between two versions of a file help you see the bug 
+that was introduced?
+
+from a version that works, it helped looking at the line where it did not,
+and focusing to the line where changes had been introduced so much quicker
+to spot errors
+
+Q:How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+By making cumulative updates and saving them, we can revert to the step-1 
+position should we do something wrong in the next coding iteration. Or step-n
+if we have radically changed many things and do not work, that´s why it is 
+important to have not just previous version but an arbitrary number of previous
+versions
+
+Q:What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+Docs does?
+
+The main advantage is the flexibility that this offers, if the coder is smart
+enough there will be a good compromise between number of commitments and 
+rate of change of each of these commits.  The drawback is that is a manual 
+process subject to human behaviour and therefore prone to forgets, bad behaviour
+etc.
+
+Q:Why do you think some version control systems, like Git, allow saving 
+multiple files in one commit, while others, like Google Docs, treat each file 
+separately?
+
+Because every tool is designed with some uses in mind.  Google Docs is not 
+designed to code with it, but rather to collaborate on standard docs, so the
+links between files are less evident and the need to control versions of 
+multiple files very limited or non-existent.
+
+q: How can you use the commands git log and git diff to view the history of 
+files?
+
+git log is a must to start looking into the version control, it will give us 
+all the previous versions that have been committed in git, with a long id and 
+some details of when has happened.  It present the info from newer to older. Then
+we can use git diff to find differences between one version and the contiguous
+one, using the commit IDs.  Instructors have used the following format: 
+git diff old_commit new_commit
+
+the git command 
+git config --global color.ui auto 
+has been used to assignautomatic colors to the differences in files, (green for 
+additions, red for deletions), although my ubuntu version already had this.
+
+Previuosly we have seen the concept of "repository", which is the group of files
+where we apply version control, and all the relevant tracked commits on them
+We can copy a repository using git clone
+example: git clone https://github.com/udacity/asteroids.git
+
+Q: How might using version control make you more confident to make changes that
+could break something?
+
+It is clearly a huge tool to control production in a progressive way.  Once a 
+feature has been added and it works, make the commit, and there is a good 
+stepping stone to continue adding further features.  If some bug appear, we
+can retrace back to a position were the bug was not there and using the magic
+of git diff understand where the issue is. Perfect! :)
+
+Q: Now that you have your workspace set up, what do you want to try using Git 
+for?
+
+For every piece of code that I am going to start to generate from now on! oh 
+wait! I need to ensure I understand version control better to use it but this
+tool is absolutely fan-tas-tic!!
